@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .progress {
+                height: 10px;
+                background: linear-gradient(#0ff,#0ff);
+                background-repeat: no-repeat;
+                background-size: 0;
+                animation: move 5s linear -1s;
+        }
+        .progress:hover{
+            animation-play-state:paused;
+        }
+        @keyframes move {
+            100% {
+                background-size: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="progress">
+
+    </div>
+</body>
+</html>

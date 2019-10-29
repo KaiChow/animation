@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .ball {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #454ffd;
+            animation: move 3s linear  both;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            33% {
+                transform: translate(200px, 0);
+            }
+            
+            66% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(200px, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ball"></div>
+</body>
+
+</html>
